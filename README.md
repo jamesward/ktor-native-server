@@ -13,12 +13,7 @@ Create & run native executable:
 build/bin/linuxX64/releaseExecutable/ktor-native-server.kexe
 ```
 
-Build a container:
-```
-./gradlew jibDockerBuild --image=ktor-native-server
-```
 
-Run the container:
 ```
-docker run -it -p8080:8080 ktor-native-server
+ab -c 8 -n 1000000 http://localhost:8080/
 ```
