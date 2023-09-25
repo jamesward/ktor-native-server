@@ -11,6 +11,8 @@ kotlin {
         binaries {
             executable(listOf(DEBUG, RELEASE)) {
                 entryPoint = "main"
+                //freeCompilerArgs += "-Xallocator=std"
+                //freeCompilerArgs += "-Xallocator=custom"
             }
         }
     }
