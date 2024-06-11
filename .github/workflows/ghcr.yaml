@@ -36,5 +36,5 @@ jobs:
       - uses: gradle/actions/setup-gradle@v3
 
       - run: |
-          ./gradlew jibDockerBuild --image=${{ steps.meta.outputs.tags }}
-          docker push ${{ steps.meta.outputs.tags }}
+          ./gradlew jibDockerBuild --image=ghcr.io/${{ github.repository }}:latest
+          docker push ghcr.io/${{ github.repository }}:latest

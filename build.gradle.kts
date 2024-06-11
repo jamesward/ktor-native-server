@@ -9,7 +9,7 @@ buildscript {
 
 plugins {
     kotlin("multiplatform") version "2.0.0"
-    id("com.google.cloud.tools.jib") version "3.3.2"
+    id("com.google.cloud.tools.jib") version "3.4.3"
 }
 
 repositories {
