@@ -8,7 +8,7 @@ buildscript {
 
 
 plugins {
-    kotlin("multiplatform") version "2.0.0"
+    kotlin("multiplatform") version "2.0.21"
     id("com.google.cloud.tools.jib") version "3.4.3"
 }
 
@@ -30,8 +30,8 @@ kotlin {
     sourceSets {
         getByName("commonMain") {
             dependencies {
-                implementation("io.ktor:ktor-server-core:2.3.11")
-                implementation("io.ktor:ktor-server-cio:2.3.11")
+                implementation("io.ktor:ktor-server-core:3.0.0")
+                implementation("io.ktor:ktor-server-cio:3.0.0")
             }
         }
     }
